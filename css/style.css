@@ -1,0 +1,19 @@
+body{
+  text-align: center;
+  vertical-align: center;
+  background-color: lightgrey;
+  color:black;
+}
+.header1{
+  margin-top: 20vh;
+}
+.daBtn{
+ margin-top: 5%;
+}
+
+.helmet{
+  margin-top:20px;
+}
+.mainHeader{
+  font-size:48px;
+}
