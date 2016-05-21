@@ -9,8 +9,7 @@
 <br/>
 <br/>
 <br/>
-<br/>
-{{attendeesData}}
+<br/> {{attendeesData}}
 <br/>
 <br/>
 <br/>
@@ -26,6 +25,19 @@
 <br/>
 
 <!--loop over membersData.attendees-->
+<!--<ul>
+    <li ng-repeat="attendee in attendeesData.attendees track by $index">
+        {{attendee.profile.name}} || {{attendee.answers[$index].question}} >>> {{attendee.answers[$index].answer}}
+
+    </li>
+</ul>-->
+
+
+
 <ul>
-    <li ng-repeat="attendee in attendeesData.attendees"> {{attendee.profile.name}}</li>
+    <li ng-repeat="attendee in attendeesData.attendees">
+        {{attendee.profile.name}}
+        <p ng-repeat="answer in attendee.answers"> {{answer.question}} {{answer.answer}}</p>
+
+    </li>
 </ul>
